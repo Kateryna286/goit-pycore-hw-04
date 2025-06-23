@@ -1,3 +1,5 @@
+import sys
+
 def total_salary(path):
     try:
         with open(path, encoding='utf-8') as file:
@@ -27,5 +29,9 @@ def total_salary(path):
         return (0, 0)
 
 if __name__ == "__main__":    
-    total, average = total_salary("data/salary.txt")
+    default_path = "data/salary.txt"
+
+    path = sys.argv[1] if len(sys.argv) > 1 else default_path
+
+    total, average = total_salary(path)
     print(f"Total salary: {total}, Average salary: {average}")
