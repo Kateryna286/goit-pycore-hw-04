@@ -29,9 +29,10 @@ def total_salary(path):
         return (0, 0)
 
 if __name__ == "__main__":    
-    default_path = "data/salary.txt"
+    if len(sys.argv) != 2:
+        print("Usage: python <path_to_script> <path_to_file>")
+        sys.exit(1)
 
-    path = sys.argv[1] if len(sys.argv) > 1 else default_path
-
+    path = sys.argv[1]
     total, average = total_salary(path)
     print(f"Total salary: {total}, Average salary: {average}")

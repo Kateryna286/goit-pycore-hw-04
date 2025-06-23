@@ -33,10 +33,11 @@ def get_cats_info(path):
         return []
     
 if __name__ == "__main__":
-    default_path = "data/cats_info.txt"
+    if len(sys.argv) != 2:
+        print("Usage: python <path_to_script> <path_to_file>")
+        sys.exit(1)
 
-    path = sys.argv[1] if len(sys.argv) > 1 else default_path
-
+    path = sys.argv[1]
     cats_info = get_cats_info(path)
     print(cats_info)
 
