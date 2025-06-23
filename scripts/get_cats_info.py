@@ -11,7 +11,7 @@ def get_cats_info(path):
                     cats_info.append({
                         'id': cat_id,
                         'name': name,
-                        'age': int(age)
+                        'age': age
                     })
                 
                 except ValueError:
@@ -31,5 +31,7 @@ def get_cats_info(path):
         print(f"Get error: {e}")
         return []
     
-# cats_info = get_cats_info("data/cats_info.txt")
-# print(cats_info)
+if __name__ == "__main__":
+    cats_info = get_cats_info("data/cats_info.txt")
+    print(cats_info)
+

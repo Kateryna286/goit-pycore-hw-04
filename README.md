@@ -1,17 +1,17 @@
 # GOIT-PYCORE-HW-04
 
-Домашнє завдання №4 з курсу Python Core.
+Домашнє завдання 4 з курсу Python.
 
 ## Структура
 
 ```
 GOIT-PYCORE-HW-04/
-├── data/ ← вхідні файли для завдань
-├── scripts/ ← всі виконувані скрипти-завдання
-│ ├── get_cats_info.py
-│ ├── get_cats_info.py
-│ ├── total_salary.py
-│ └── get_dir_structure.py
+├── data/ ---> вхідні файли для завдань
+├── scripts/ ---> всі виконувані скрипти-завдання
+│ ├── bot_assistant.py ---> консольний бот для роботи з контактами
+│ ├── get_cats_info.py ---> читає файл з інформацією про котів і виводить список словників
+│ ├── total_salary.py ---> обчислює загальну та середню зарплати з файлу
+│ └── get_dir_structure.py ---> виводить структуру директорії з кольоровим форматуванням
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
@@ -44,10 +44,10 @@ pip install -r requirements.txt
 ### 4. Запустити завдання
 
 ```bash
-python get_cats_info.py
-python total_salary.py
-python get_dir_structure.py
-python bot_assistant.py
+python3 scripts/get_cats_info.py
+python3 scripts/total_salary.py
+python3 scripts/get_dir_structure.py
+python3 scripts/bot_assistant.py
 ```
 
 ## Примітки

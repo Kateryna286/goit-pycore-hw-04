@@ -25,6 +25,7 @@ def total_salary(path):
     except Exception as e:
         print(f"Get error: {e}")
         return (0, 0)
-    
-# total, average = total_salary("data/salary.txt")
-# print(f"Total salary: {total}, Average salary: {average}")
+
+if __name__ == "__main__":    
+    total, average = total_salary("data/salary.txt")
+    print(f"Total salary: {total}, Average salary: {average}")
